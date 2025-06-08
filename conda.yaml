@@ -1,12 +1,12 @@
-name: Iris_Classification
+name: iris_env
 channels:
-  - defaults
   - conda-forge
+  - defaults
 dependencies:
   - python=3.10
+  - pip
   - scikit-learn
   - pandas
   - matplotlib
-  - pip
   - pip:
       - mlflow
