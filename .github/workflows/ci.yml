@@ -12,19 +12,20 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Set up Miniconda
+      - name: Set up Conda
         uses: conda-incubator/setup-miniconda@v2
         with:
+          auto-update-conda: true
           python-version: 3.10
           environment-file: conda.yaml
           activate-environment: iris_env
           auto-activate-base: false
 
-      - name: Install MLflow via pip (fallback)
+      - name: Verify conda env
         shell: bash -l {0}
         run: |
-          conda activate iris_env
-          pip install mlflow
+          conda info --envs
+          conda list
 
       - name: Run MLflow Project
         shell: bash -l {0}
