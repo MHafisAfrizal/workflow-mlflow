@@ -1,4 +1,4 @@
-name: Iris_Classification
+name: iris_env
 
 conda_env: conda.yaml
 
