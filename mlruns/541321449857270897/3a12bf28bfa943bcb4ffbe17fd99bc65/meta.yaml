@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/HP/Downloads/Eksperimen_SML_Hafis_Afrizal/Workflow-CI/mlruns/541321449857270897/3a12bf28bfa943bcb4ffbe17fd99bc65/artifacts
+end_time: 1749394390372
+entry_point_name: ''
+experiment_id: '541321449857270897'
+lifecycle_stage: active
+run_id: 3a12bf28bfa943bcb4ffbe17fd99bc65
+run_name: inquisitive-hare-23
+run_uuid: 3a12bf28bfa943bcb4ffbe17fd99bc65
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749394099249
+status: 3
+tags: []
+user_id: HP

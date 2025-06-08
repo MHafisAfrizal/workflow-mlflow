@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/HP/Downloads/Eksperimen_SML_Hafis_Afrizal/Workflow-CI/mlruns/0/bb4723416b964d4c9c187efdf002d37f/artifacts
+end_time: 1749393477373
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: bb4723416b964d4c9c187efdf002d37f
+run_name: handsome-finch-306
+run_uuid: bb4723416b964d4c9c187efdf002d37f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749393106077
+status: 4
+tags: []
+user_id: HP

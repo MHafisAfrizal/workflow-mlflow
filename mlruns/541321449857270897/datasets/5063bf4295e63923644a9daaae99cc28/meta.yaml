@@ -1,0 +1,9 @@
+digest: 1a7a870b
+name: dataset
+profile: '{"num_rows": 30, "num_elements": 120}'
+schema: '{"mlflow_colspec": [{"type": "double", "name": "0", "required": true}, {"type":
+  "double", "name": "1", "required": true}, {"type": "double", "name": "2", "required":
+  true}, {"type": "double", "name": "3", "required": true}]}'
+source: '{"tags": {"mlflow.user": "HP", "mlflow.source.name": "modelling.py", "mlflow.source.type":
+  "LOCAL"}}'
+source_type: code

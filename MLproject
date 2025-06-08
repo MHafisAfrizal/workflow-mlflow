@@ -1,0 +1,7 @@
+name: Iris_Classification
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    command: "python modelling.py"
