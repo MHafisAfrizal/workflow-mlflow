@@ -8,26 +8,24 @@ on:
 jobs:
   train:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v3
 
-      - name: Set up Conda
+      - name: Set up Miniconda
         uses: conda-incubator/setup-miniconda@v2
         with:
-          python-version: 3.8
-          activate-environment: iris_env
-          environment-file: conda.yaml
+          python-version: 3.10
           auto-activate-base: false
 
-      - name: Install MLflow (just in case)
-        run: conda install -n iris_env -c conda-forge mlflow
+      - name: Create conda environment
+        shell: bash -l {0}
+        run: |
+          conda env create -n iris_env -f conda.yaml
+          conda activate iris_env
+          pip install mlflow  # Just to be extra safe
 
       - name: Run MLflow project
-        run: mlflow run . --env-manager=conda
-
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: mlflow-artifacts
-          path: mlruns/
+        shell: bash -l {0}
+        run: |
+          conda activate iris_env
+          mlflow run .
