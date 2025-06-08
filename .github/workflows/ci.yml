@@ -23,7 +23,7 @@ jobs:
         run: mlflow run .
 
       - name: Upload artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: mlflow-artifacts
           path: mlruns/
